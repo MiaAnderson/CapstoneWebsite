@@ -1,0 +1,23 @@
+body {
+background-color: #cbfcb9;
+color: #113106
+font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+  color: #1a5d02
+}
+
+h2 {
+  color: #1a5d02
+}
+
+div {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1000px
+  margin: 0 auto;
+  background-color: white;background-color: white;
+}
