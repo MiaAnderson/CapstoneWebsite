@@ -51,7 +51,6 @@
         </section>
       </div>
 
-
     <div class="container">
       <section>
         <h2> History </h2>
@@ -59,13 +58,85 @@
 
 
         <p>Mary and Jacob Anderson were growing organic produce on this land decades before anyone had even heard the phrase "Organic Produce". Judy and Joseph have continued on in this tradition with a love for real food grown by Mother Nature.</p>
-
-          <img src="images/mary.jpg"
-            alt="Mary and Jacob Anderson"
-            width="400"
-            height="600" />
       </section>
     </div>
+
+
+
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/mary.jpg" style="width:100%" >
+      <div class="text">Mary and Jacob Anderson</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/crop.JPG" style="width:100%">
+      <div class="text">Crops</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/machine.jpg" style="width:100%">
+      <div class="text">Old Tractor</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/sky.jpg" style="width:100%">
+      <div class="text">Orchard</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+
+
+
+
 
     <div class="container">
       <section>
