@@ -1,15 +1,36 @@
+/* this is my style sheet */
+*{
+  font-size: 100%;
+  margin: 0;
+  line-height: 3;
+  box-sizng: border-box;
+}
+
 body {
-background-color: #cbfcb9;
-color: #113106
+background-color: White;
+color: Black;
 font-family: 'Arimo', sans-serif;
+font-size: 26px;
+}
+
+header h1{
+  text-align: center;
 }
 
 h1 {
-  color: #1a5d02
+  color: #1a5d02;
+  font-size: 60px;
 }
 
 h2 {
-  color: #1a5d02
+  color: #1a5d02;
+  font-size: 45px;
+  text-align: center;
+}
+
+p {
+line-height: 2;
+text-align: center;
 }
 
 div {
@@ -19,5 +40,9 @@ div {
 .container {
   max-width: 1000px
   margin: 0 auto;
-  background-color: white;background-color: white;
+  background-color: white;
+}
+
+footer p{
+  text-align: left;
 }
