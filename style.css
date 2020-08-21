@@ -1,7 +1,7 @@
 /* this is my style sheet */
 *{
   font-size: 100%;
-  margin: 0;
+  margin: 20px 50px 20px 50px;
   line-height: 3;
   box-sizng: border-box;
 }
@@ -10,7 +10,8 @@ body {
 background-color: White;
 color: Black;
 font-family: 'Arimo', sans-serif;
-font-size: 26px;
+font-size: 20px;
+margin: 50px;
 }
 
 header h1{
@@ -24,7 +25,7 @@ h1 {
 
 h2 {
   color: #1a5d02;
-  font-size: 45px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -33,16 +34,31 @@ line-height: 2;
 text-align: center;
 }
 
+a {
+  Color: #0ca706;
+  font-size: 22px;
+  text-decoration;: underline;
+  margin: 0 auto;
+}
+
 div {
   margin: 0 auto;
 }
 
-.container {
-  max-width: 1000px
-  margin: 0 auto;
-  background-color: white;
+.column {
+  float: left;
+  width: 23%;
+  padding: 2px;
 }
 
-footer p{
-  text-align: left;
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  text-align: right;
+  font-size: 15px;
 }
